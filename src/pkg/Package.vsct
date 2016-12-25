@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Extern href="KnownImageIds.vsct"/>
+
+  <Commands package="Package">
+    <Menus>
+      <!--~~~ Toolbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Menu guid="PackageCommandSet" id="PackageToolbar" type="Toolbar" priority="0xFFFF">
+        <CommandFlag>AlwaysCreate</CommandFlag>
+        <Strings>
+          <ButtonText>Time Savers</ButtonText>
+        </Strings>
+      </Menu>
+
+      <!--~~~ Package Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Menu guid="PackageCommandSet" id="PackageMenu" type="Menu" priority="0x4000">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS"/>
+        <CommandFlag>AlwaysCreate</CommandFlag>
+        <Strings>
+          <ButtonText>Time Savers</ButtonText>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Groups>
+      <!--~~~ Solution Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Group guid="PackageCommandSet" id="SolutionNodeGroup" priority="0x0000">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE" />
+      </Group>
+
+      <!--~~~ Project Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Group guid="PackageCommandSet" id="ProjectNodeGroup" priority="0x0000">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
+      </Group>
+
+      <!--~~~ Code Editor ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Group guid="PackageCommandSet" id="CodeEditorGroup" priority="0x0000">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Button guid="PackageCommandSet" id="OptionsCommand" type="Button" priority="0x0001">
+        <Parent guid="PackageCommandSet" id="OptionsCommands" />
+        <Icon guid="ImageCatalogGuid" id="Settings"/>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>FixMenuController</CommandFlag>
+        <Strings>
+          <CommandName>TimeSaversOptions</CommandName>
+          <CanonicalName>TimeSaversOptions</CanonicalName>
+          <LocCanonicalName>TimeSaversOptions</LocCanonicalName>
+          <ButtonText>Time Savers Options</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="Package" value="{6359DA17-6477-4E9C-8E73-7D05EA8A33A1}" />
+
+    <GuidSymbol name="OptionsDialogPage" value="{6BF7C9FA-8E42-4673-83CB-288EFE5AE3B5}" />
+
+    <GuidSymbol name="PackageCommandSet" value="{4EAC4E23-4909-4DAC-9D6E-819BDC861480}">
+      <IDSymbol name="PackageToolbar" value="0xA001" />
+      <IDSymbol name="PackageMenu" value="0xA002" />
+
+      <IDSymbol name="CodeEditorGroup" value="0xB000" />
+      <IDSymbol name="SolutionNodeGroup" value="0xC000" />
+      <IDSymbol name="ProjectNodeGroup" value="0xD000" />
+
+      <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <IDSymbol name="OptionsGroup" value="0x0950" />
+      <IDSymbol name="OptionsCommands" value="0x0952" />
+
+      <IDSymbol name="OptionsCommand" value="0x0953" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
