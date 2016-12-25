@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitTags.Package", "pkg\GitTags.Package.csproj", "{5C8BDB95-06D0-433B-9F4D-5DC3CC223566}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitTags.VSIX", "vsix\GitTags.VSIX.csproj", "{904F96D4-F61B-476C-BF4A-DA88AA495E77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C4A036EC-1970-42D8-9007-DB1FA20D25B3}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C8BDB95-06D0-433B-9F4D-5DC3CC223566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C8BDB95-06D0-433B-9F4D-5DC3CC223566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C8BDB95-06D0-433B-9F4D-5DC3CC223566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C8BDB95-06D0-433B-9F4D-5DC3CC223566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{904F96D4-F61B-476C-BF4A-DA88AA495E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{904F96D4-F61B-476C-BF4A-DA88AA495E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{904F96D4-F61B-476C-BF4A-DA88AA495E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{904F96D4-F61B-476C-BF4A-DA88AA495E77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
