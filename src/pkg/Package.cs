@@ -12,10 +12,10 @@ namespace GitTags.Package
     /// </summary>
     internal sealed partial class PackageGuids
     {
-        public const string PackageString = "6359da17-6477-4e9c-8e73-7d05ea8a33a1";
+        public const string PackageGuidString = "6359da17-6477-4e9c-8e73-7d05ea8a33a1";
         public const string OptionsDialogPageString = "6bf7c9fa-8e42-4673-83cb-288efe5ae3b5";
         public const string PackageCommandSetString = "4eac4e23-4909-4dac-9d6e-819bdc861480";
-        public static Guid Package = new Guid(PackageString);
+        public static Guid PackageGuid = new Guid(PackageGuidString);
         public static Guid OptionsDialogPage = new Guid(OptionsDialogPageString);
         public static Guid PackageCommandSet = new Guid(PackageCommandSetString);
     }

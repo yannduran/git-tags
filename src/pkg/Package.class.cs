@@ -1,16 +1,25 @@
-﻿namespace GitTags.Package
+﻿using System.Runtime.InteropServices;
+using Microsoft.VisualStudio.Shell;
+using System;
+
+namespace GitTags.Package
 {
-    using System.Runtime.InteropServices;
-    using Microsoft.VisualStudio.Shell;
+    using YD.Framework.VisualStudio.Packages;
 
     using static PackageGuids;
     using static Vsix;
 
-
     [InstalledProductRegistration("110", "112", Version, IconResourceID = 400)]
-    [Guid(PackageString)]
+    [Guid(PackageGuidString)]
 
-    public sealed class Package
+    public sealed class PackageClass : PackageBase
     {
+        public PackageClass() : base(PackageCommandSet, Name, Description)
+        { }
+
+        protected override void Initialize()
+        {
+            base.Initialize();
+        }
     }
 }

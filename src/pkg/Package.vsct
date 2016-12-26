@@ -67,7 +67,7 @@
   </Commands>
 
   <Symbols>
-    <GuidSymbol name="Package" value="{6359DA17-6477-4E9C-8E73-7D05EA8A33A1}" />
+    <GuidSymbol name="PackageGuid" value="{6359DA17-6477-4E9C-8E73-7D05EA8A33A1}" />
 
     <GuidSymbol name="OptionsDialogPage" value="{6BF7C9FA-8E42-4673-83CB-288EFE5AE3B5}" />
 
