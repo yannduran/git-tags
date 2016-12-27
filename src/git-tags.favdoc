@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Favorites xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <folders>
+    <Folder>
+      <name>Build Definitions</name>
+      <folders />
+      <favorites>
+        <Favorite>
+          <name>Master to Gthub</name>
+          <absolutePath>https://lumiinus.visualstudio.com/GitTags/_build?definitionId=6</absolutePath>
+          <viewKind>External Document</viewKind>
+        </Favorite>
+      </favorites>
+    </Folder>
+    <Folder>
+      <name>Solution</name>
+      <folders />
+      <favorites>
+        <Favorite>
+          <name>Github repo</name>
+          <absolutePath>https://github.com/yannduran/git-tags</absolutePath>
+          <viewKind>External Document</viewKind>
+        </Favorite>
+      </favorites>
+    </Folder>
+  </folders>
+  <favorites />
+</Favorites>
