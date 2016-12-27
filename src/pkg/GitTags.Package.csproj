@@ -43,6 +43,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DeployExtension>False</DeployExtension>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -53,6 +54,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Options\GeneralOptionsDialogPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Package.class.cs">
       <DependentUpon>Package.vsct</DependentUpon>
     </Compile>
@@ -186,14 +190,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\preview.png" />
+    <Content Include="Resources\preview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="source.extension.ico">
+      <DependentUpon>source.extension.vsixmanifest</DependentUpon>
+    </Content>
     <VSCTCompile Include="Package.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
       <LastGenOutput>Package.cs</LastGenOutput>
       <SubType>Designer</SubType>
       <Generator>VsctGenerator</Generator>
     </VSCTCompile>
-    <Content Include="Resources\package.ico" />
+    <Content Include="Resources\package.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="source.extension.resx">

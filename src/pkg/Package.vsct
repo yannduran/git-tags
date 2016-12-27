@@ -5,7 +5,7 @@
   <Extern href="vsshlids.h"/>
   <Extern href="KnownImageIds.vsct"/>
 
-  <Commands package="Package">
+  <Commands package="PackageGuid">
     <Menus>
       <!--~~~ Toolbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
