@@ -73,6 +73,7 @@
     </Content>
     <Content Include="..\pkg\source.extension.ico">
       <Link>source.extension.ico</Link>
+      <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </Content>
     <None Include="..\pkg\source.extension.vsixmanifest">
       <Link>source.extension.vsixmanifest</Link>
@@ -81,6 +82,7 @@
   <ItemGroup>
     <EmbeddedResource Include="..\pkg\source.extension.resx">
       <Link>source.extension.resx</Link>
+      <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

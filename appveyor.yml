@@ -28,7 +28,6 @@ init:
 install:
 #  - ps: Vsix-UpdateBuildVersion
   - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
-  - ps: Vsix-TokenReplacement src\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
   - ps: Vsix-TokenReplacement src\pkg\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
 
 nuget:
@@ -51,7 +50,7 @@ configuration: Release
 build:
   parallel: true
   verbosity: minimal
-  project: src\GitTags.sln
+#  project: src\GitTags.sln
 
 before_build:
   - nuget restore -verbosity quiet
