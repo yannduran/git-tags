@@ -37,7 +37,7 @@ Describe feature 2. Add screenshots/code samples etc.
 Describe sub feature. Add screenshots/code samples etc.
 -->
 ## Contribute
-Check out the [contribution guidelines](CONTRIBUTING.md)
+Check out the [contribution guidelines](./.github/CONTRIBUTING.md)
 if you want to contribute to this project.
 
 For cloning and building this project yourself, make sure
