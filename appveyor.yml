@@ -27,8 +27,8 @@ init:
 #  runs after cloning repository
 install:
 #  - ps: Vsix-UpdateBuildVersion
-#  - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
-#  - ps: Vsix-TokenReplacement src\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
+  - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
+  - ps: Vsix-TokenReplacement src\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
 
 nuget:
   account_feed: true
@@ -50,6 +50,7 @@ configuration: Release
 build:
   parallel: true
   verbosity: minimal
+  project: src\GitTags.sln
 
 before_build:
   - nuget restore -verbosity quiet
