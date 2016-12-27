@@ -12,7 +12,7 @@ namespace GitTags.Package
         public const string Description = @"Easiest way to view/add/delete/edit tags in a Git repo";
         public const string Language = "en-US";
         public const string Version = "0.1.2";
-        public const string Author = "Lumnous Software Solutions";
+        public const string Author = "Luminous Software Solutions";
         public const string Tags = "";
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="db058027-44b4-4bf3-a383-1bea20098df8" Version="0.1.2" Language="en-US" Publisher="Lumnous Software Solutions" />
+    <Identity Id="db058027-44b4-4bf3-a383-1bea20098df8" Version="0.1.2" Language="en-US" Publisher="Luminous Software Solutions" />
     <DisplayName>Git Tags</DisplayName>
     <Description xml:space="preserve">Easiest way to view/add/delete/edit tags in a Git repo</Description>
     <Icon>Resources\package.ico</Icon>
