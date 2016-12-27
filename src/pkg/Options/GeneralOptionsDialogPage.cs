@@ -12,6 +12,7 @@ namespace GitTags.Package.Options
         [Category("Git Tags")]
         [DisplayName("Enabled")]
         [Description("Determines whether the Git Tags functionality is enabled or disabled")]
+
         public bool Enabled { get; set; }
 
         public override void LoadSettingsFromStorage()
